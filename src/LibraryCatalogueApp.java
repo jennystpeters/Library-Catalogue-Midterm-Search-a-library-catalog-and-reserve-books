@@ -6,7 +6,8 @@ import java.util.Date;
 
 //Console program to search library catalog and reserve books
 public class LibraryCatalogueApp {
-    public static void main(String[] args) {
+    //FIXME: public static void main(String[] args) {
+    {
 
         createCatalogue();
 
