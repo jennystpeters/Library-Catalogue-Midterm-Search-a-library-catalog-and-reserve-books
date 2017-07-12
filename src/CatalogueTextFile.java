@@ -19,12 +19,24 @@ public class CatalogueTextFile {
             BufferedReader buffReader = new BufferedReader(new FileReader("catalogue.txt"));
 
             String line = null;
+            int numOfBooks = 12; //FIXME: Update with number of books
+            int numOfAttributes = 10; //FIXME: Update with number of books
+            String[][] bookArray = new String[numOfBooks][numOfAttributes];
+            int catalogueNum = 0;
 
             System.out.println();
             while ((line = buffReader.readLine()) != null) {
                 if (!line.isEmpty()) {
-                    System.out.println(line);
+                    String[] bookAttributes = line.split("   "); //FIXME: regex of choice
+
+                    for (int i = 0; i < bookAttributes.length; i++) {
+                        bookArray[catalogueNum][i] = bookAttributes[i];
+                        System.out.print(bookArray[catalogueNum][i] + " ");
+                    }
+
                 }
+                catalogueNum++;
+                System.out.println();
             }
             System.out.println();
 
