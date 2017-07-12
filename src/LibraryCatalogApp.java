@@ -3,6 +3,8 @@
  */
 public class LibraryCatalogApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        CatalogueTextFile.readFromCatalog();
+
     }
 }
