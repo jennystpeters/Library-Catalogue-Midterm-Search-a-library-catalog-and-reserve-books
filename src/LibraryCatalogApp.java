@@ -4,7 +4,7 @@
 public class LibraryCatalogApp {
     public static void main(String[] args) {
 
-        CatalogueTextFile.readFromCatalog();
+        CatalogueTextFile.readFromCatalogue();
 
     }
 }

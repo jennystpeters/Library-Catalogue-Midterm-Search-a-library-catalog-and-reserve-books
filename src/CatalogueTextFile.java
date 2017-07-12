@@ -15,8 +15,8 @@ public class CatalogueTextFile {
 
     public static void readFromCatalogue() {
         try {
-            FileReader reader = new FileReader("countries.txt");
-            BufferedReader buffReader = new BufferedReader(new FileReader("countries.txt"));
+            FileReader reader = new FileReader("catalogue.txt");
+            BufferedReader buffReader = new BufferedReader(new FileReader("catalogue.txt"));
 
             String line = null;
 
@@ -45,8 +45,10 @@ public class CatalogueTextFile {
             //BufferedWriter buffWriter = new BufferedWriter(writer);
 
             System.out.println();
-            writer.write("\n" + Validator.getString("Enter country: "));
-            System.out.println("This country has been saved!\n");
+
+            //To add a book:
+            //writer.write("\n" + Validator.getString("Enter book title: "));
+            //System.out.println("This book has been saved!\n");
 
             writer.close();
             //buffWriter.close();
