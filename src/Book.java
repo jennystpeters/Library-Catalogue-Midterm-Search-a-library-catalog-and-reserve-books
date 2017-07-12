@@ -12,7 +12,7 @@ public class Book {
     private Status status;
     private Genre genre;
 
-    public Book(String title, String author, Date dueDate, Boolean braille) {
+    public Book(String title, String author, Date dueDate, Boolean braille, Status status, Genre genre) {
     }
 
     public String getTitle() {

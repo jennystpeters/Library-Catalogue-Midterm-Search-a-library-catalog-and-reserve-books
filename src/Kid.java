@@ -7,10 +7,11 @@ public class Kid extends Book {
 
     private Boolean boardBook;
 
-    public Kid(String title, String author, Date dueDate, Boolean braille, Boolean boardBook) {
-        super(title, author, dueDate, braille);
+    public Kid(String title, String author, Date dueDate, Boolean braille, Status status, Genre genre, Boolean boardBook) {
+        super(title, author, dueDate, braille, status, genre);
         this.boardBook = boardBook;
     }
+
     public Boolean getBoardBook() {
         return boardBook;
     }

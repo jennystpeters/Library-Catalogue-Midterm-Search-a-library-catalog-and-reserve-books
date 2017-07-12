@@ -8,8 +8,8 @@ public class Adult extends Book {
     private Boolean censored;
     private Boolean largePrint;
 
-    public Adult(String title, String author, Date dueDate, Boolean braille, Boolean censored, Boolean largePrint) {
-        super(title, author, dueDate, braille);
+    public Adult(String title, String author, Date dueDate, Boolean braille, Status status, Genre genre, Boolean censored, Boolean largePrint) {
+        super(title, author, dueDate, braille, status, genre);
         this.censored = censored;
         this.largePrint = largePrint;
     }
