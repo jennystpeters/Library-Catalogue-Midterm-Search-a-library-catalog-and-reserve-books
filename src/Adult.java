@@ -1,8 +1,11 @@
+/*
 import java.util.Date;
 
+*/
 /**
  * Created by jenny on 7/12/2017.
- */
+ *//*
+
 public class Adult extends Book {
 
     private Boolean censored;
@@ -30,3 +33,4 @@ public class Adult extends Book {
         this.largePrint = largePrint;
     }
 }
+*/

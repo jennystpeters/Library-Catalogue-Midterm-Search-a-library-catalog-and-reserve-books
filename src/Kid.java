@@ -1,8 +1,11 @@
+/*
 import java.util.Date;
 
+*/
 /**
  * Created by jenny on 7/12/2017.
- */
+ *//*
+
 public class Kid extends Book {
 
     private Boolean boardBook;
@@ -19,4 +22,4 @@ public class Kid extends Book {
     public void setBoardBook(Boolean boardBook) {
         this.boardBook = boardBook;
     }
-}
+}*/

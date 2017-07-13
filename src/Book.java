@@ -7,12 +7,22 @@ public class Book {
 
     private String title;
     private String author;
-    private Date dueDate;
-    private Boolean braille;
-    private Status status;
-    private Genre genre;
+    private String dueDate;
+    private String braille;
+    private String status;
+    private String genre;
 
-    public Book(String title, String author, Date dueDate, Boolean braille, Status status, Genre genre) {
+    public Book(String title, String author, String dueDate, String braille, String status, String genre) {
+        this.title = title;
+        this.author = author;
+        this.dueDate = dueDate;
+        this.braille = braille;
+        this.status = status;
+        this.genre = genre;
+    }
+
+    public Book() {
+
     }
 
     public String getTitle() {
@@ -31,36 +41,41 @@ public class Book {
         this.author = author;
     }
 
-    public Date getDueDate() {
+    public String getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(Date dueDate) {
+    public void setDueDate(String dueDate) {
         this.dueDate = dueDate;
     }
 
-    public Boolean getBraille() {
+    public String getBraille() {
         return braille;
     }
 
-    public void setBraille(Boolean braille) {
+    public void setBraille(String braille) {
         this.braille = braille;
     }
 
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public Genre getGenre() {
+    public String getGenre() {
         return genre;
     }
 
-    public void setGenre(Genre genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
+    @Override
+    public String toString() {
+        return "Title: " + title + "   Author: " + author + "   Due Date: " + dueDate;
+
+    }
 }
